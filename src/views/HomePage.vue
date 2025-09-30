@@ -8,18 +8,18 @@
 
       <div class="action-buttons">
         <button class="start-btn" @click="startNewGame">
-          🚀 开始新游戏
+          开始游戏
         </button>
         <button class="load-btn" @click="loadGame" :disabled="!hasSaveData">
-          📂 读取存档
+          读取存档
         </button>
       </div>
 
-      <div class="test-info">
+      <!-- <div class="test-info">
         <h3>测试信息</h3>
         <p>如果你能看到这个页面，说明路由系统工作正常！</p>
         <p>当前时间: {{ currentTime }}</p>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -75,7 +75,8 @@ onMounted(() => {
 <style scoped>
 .home-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: gray;
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,14 +104,15 @@ onMounted(() => {
   font-weight: 700;
   color: #2c3e50;
   margin: 0 0 16px 0;
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: black;
+  /* background: linear-gradient(45deg, #667eea, #764ba2); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .game-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #7f8c8d;
   margin: 0;
 }
@@ -135,7 +137,8 @@ onMounted(() => {
 }
 
 .start-btn {
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: black;
+  /* background: linear-gradient(45deg, #667eea, #764ba2); */
   color: white;
 }
 
@@ -145,8 +148,8 @@ onMounted(() => {
 }
 
 .load-btn {
-  background: #f8f9fa;
-  color: #495057;
+  background: white;
+  color: black;
   border: 2px solid #dee2e6;
 }
 
@@ -160,7 +163,7 @@ onMounted(() => {
   cursor: not-allowed;
 }
 
-.test-info {
+/* .test-info {
   background: #e8f5e8;
   border-radius: 10px;
   padding: 20px;
@@ -176,7 +179,7 @@ onMounted(() => {
 .test-info p {
   margin: 5px 0;
   color: #155724;
-}
+} */
 
 /* 响应式设计 */
 @media (max-width: 768px) {
